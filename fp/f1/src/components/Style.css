@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+/*  Counter Css */
+.buttonAdd{
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    color: white;
+    background-color: red;
+}
+.buttonSub{
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    color: white;
+    background-color: red;
+}
+/* Counter Css End */
+
+/* Login & SignUp Starts */
+
+.loginbtn{
+
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+.signupbtn{
+
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+/* Login & SignUp Ends */
+
+/* Category CSS Start */
+
+.h1{
+    margin-left: 120px;
+    margin-top:50px;
+    color: rgb(143, 141, 141);
+}
+.box1{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    padding-top: 30px;
+    border: 1px solid rgb(219, 214, 214);    
+    display: flex;
+    justify-content: center;
+}
+.Categorycards{
+    height: 50px;
+    width:50px;  
+}
+.ctext{
+    margin-left: -12px;
+    }
+.box1:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* Category CSS Ends */
+
+/* OtherProducts Start */
+
+.JFY{
+    margin-left: 120px;
+    margin-top:50px;
+    color: rgb(143, 141, 141);
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.loadmore{
+
+    height: 50px;
+    width: 400px;
+    color: orangered;
+    border: 2px solid orangered;
+}
+.loadmore:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* OtherProducts Ends */
+
+/* Contact CSS Starts */
+.Contacttext{
+    color: orangered;
+    font-size: large;
+}
+.hover{
+    text-decoration: none;
+}
+.hover:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Contact CSS Ends */
+
+/* Footer CSS Starts */
+.headings{
+    font-weight:bolder ;
+    color: rgb(117, 117, 117);
+}
+.heading1{
+
+    font-weight:bolder ;
+    padding-bottom: 40px;
+    color: rgb(117, 117, 117);
+
+}
+/* Footer CSS End */
+
+.align{
+
+    color: white;  
+    margin-top: -10px; 
+}

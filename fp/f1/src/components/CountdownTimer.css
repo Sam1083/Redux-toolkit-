@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.countdown-timer {
+    display: flex;
+    gap: 5px;
+    margin-left: 50px;
+}
+.days {
+    height: 25px;
+    width: 25px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    text-align: center;
+}
+.dy1 {
+    color: orangered;
+    font-size: 15px
+}
+.hours {
+    height: 25px;
+    width: 25px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    text-align: center;
+}
+.hr1 {
+    color: orangered;
+    font-size: 15px
+}
+.minutes {
+    height: 25px;
+    width: 25px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    text-align: center;
+}
+.min1 {
+    color: orangered;
+    font-size: 15px
+}
+.seconds {
+    height: 25px;
+    width: 26px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    text-align: center;
+} 
