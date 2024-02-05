@@ -1,14 +1,24 @@
- import { configureStore } from "@reduxjs/toolkit";
- import bucketReducer   from "../features/bucketSlice"
- import cartReducer   from "../features/cartSlice"
+import { configureStore,combineReducers } from "@reduxjs/toolkit";
+import bucketReducer from "../features/bucketSlice";
+import cartReducer from "../features/cartSlice";
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
- export const store =configureStore({
-     reducer: {
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['cart'],
+};
 
-        bucket: bucketReducer,
-        cart: cartReducer
+const persistedReducer = persistReducer(persistConfig, combineReducers({
+  bucket: bucketReducer,
+  cart: cartReducer
+}));
 
-     },
- });
+export const store = configureStore({
+  reducer: persistedReducer,
+});
 
-export default store;
+const persistor = persistStore(store);
+
+export default { store, persistor };

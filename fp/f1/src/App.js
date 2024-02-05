@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Daraz from './components/Daraz';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import Cart from './components/Cart';
+// import Cart from './components/Cart';
 import Language from './components/Language';
 import BecomeASeller from './components/BecomeASeller';
 import DarazAffiliateProgram from './components/DarazAffiliateProgram';
@@ -47,24 +47,14 @@ function App() {
     <Route path="/" element={<Daraz/>}> </Route>
     <Route path="/Login" element={<Login/>}></Route>
     <Route path="/Signup" element={<Signup/>} ></Route>
-    <Route path="/Cart" element={<Cart/>}></Route>
     <Route path="/language" element={<Language/>} ></Route>
     <Route path="/BecomeASeller" element={<BecomeASeller/>} ></Route>
     <Route path="/DarazAffiliateProgram" element={<DarazAffiliateProgram/>} ></Route>
     <Route path="/HelpAndSupport" element={<HelpAndSupport/>} ></Route>
     <Route path="SaleCards/:id/" element={<ProductDescription/>} ></Route>
-    {/* <Route path="/OtherProducts" element={</>} ></Route> */}
-    {/* <Route path="Category/" element={<Category/>}></Route> */}
     <Route  element={<Dashboard/>} path="/Dashboard"/>
     <Route path="Chat" element={<Chat/>} ></Route>
-    <Route path="CheckOut" element={<CheckOut/>} ></Route>
-
-    
-
-
-  
-
-    
+    <Route path="CheckOut" element={<CheckOut/>} ></Route>    
     </Routes>
     <Contact/>
     <Footer/>

@@ -33,8 +33,19 @@ const cartSlice = createSlice({
         itemToDecrement.quantity -= 1;
       }
     },
+
+    clearBucket: (state) => {
+      state.items = [];
+      state.quantity = 0;
+      state.total = 0;
+    },
+    removeItem: (state, action) => {
+      const itemId = action.payload;
+      state.items = state.items.filter((item) => item.id !== itemId);
+    },
+
   }
 });
 
-export const { addToCart, incrementQuantity, decrementQuantity } = cartSlice.actions;
+export const { addToCart, incrementQuantity, decrementQuantity, clearBucket, removeItem} = cartSlice.actions;
 export default cartSlice.reducer;

@@ -124,3 +124,21 @@
     color: white;  
     margin-top: -10px; 
 }
+
+.counter{
+margin-left: 400px;
+margin-top: -500px;
+
+}
+.buttonAdd:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.buttonSub:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.clear-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}

@@ -31,6 +31,9 @@ const ProductDescription = () => {
     },[])
 
 
+    
+
+
     return (
         <div className='bg-white ' style={{ minHeight: '100vh', padding: '20px' }}   >
             <div className="container">
@@ -41,11 +44,7 @@ const ProductDescription = () => {
                     <div className="col-lg-6">
                         <h1>{product?.title}</h1>
                         <p>{product?.inStock ? <span className='text-success'>In Stock</span> : <span className='text-danger'>Out of Stock</span>}</p>
-                        <h3>Rs .{product?.price}</h3>
-
-
-                       {/* <Counter/> */}
-                       
+                        <h3>Rs .{product?.price}</h3>                      
 
                         <hr />
                         
@@ -66,7 +65,7 @@ const ProductDescription = () => {
                             }}
                             >Add to Cart</button>                           
 
-                           <Link className="check-link" to="/checkout"> <button className='bg-warning fs-3' style={{ height: '50px', width: '200px' }}> Check Out</button> </Link>
+                           {/* <Link className="check-link" to="/checkout"> <button className='bg-warning fs-3' style={{ height: '50px', width: '200px' }}> Check Out</button> </Link> */}
                         </div>                      
                     </div>
                 </div>

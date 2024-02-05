@@ -5,8 +5,8 @@ import CardChannel from './CardChannel'
 import SaleCards from './SaleCards'
 import Category from './Category'
 import OtherProducts from './OtherProducts'
-import CheckOut from './CheckOut';
-import BucketContainer from './BucketContainer';
+
+
 
 
 

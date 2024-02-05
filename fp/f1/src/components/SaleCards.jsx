@@ -41,7 +41,7 @@ const SaleCards = () => {
                     <img src={item.image} class="card-img-top" alt="..." />
                       <div class="card-body">
                         <p class="card-text text-dark">{item.title.slice(0,50)}</p>
-                        <h5 class="price fs-5 mt-5">{item.price}</h5>
+                        <h5 class="price fs-5 mt-5">Rs. {item.price}</h5>
                                              
                     </div>
                       </Link>
