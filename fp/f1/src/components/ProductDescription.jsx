@@ -14,6 +14,9 @@ import { addToCart } from '../features/cartSlice'
 
 
 const ProductDescription = () => {
+
+
+    
     const dispatch=useDispatch();
     const { quantity } = useSelector((store) => store.bucket);
   

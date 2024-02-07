@@ -63,8 +63,7 @@ const Navbar = () => {
                       <Link className="nav-link d-flex" to="/CheckOut"> 
                         <span><CartIcon/></span><span className='align'>
                           {items.length}
-                          </span> 
-                      
+                          </span>                      
                       </Link>
                     </li>
                   </ul>

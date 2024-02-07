@@ -41,19 +41,19 @@ const Signup = () => {
           <label for="exampleFormControlInput1" class="form-label">Name</label>
           <input type="text" name='name' value={name} class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={onChange} />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Email address</label>
           <input type="email" name='email' value={email} class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={onChange} />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Phone</label>
           <input type="text" name='phone' value={phone} class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={onChange} />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Password</label>
           <input type="password" name='password' value={password} class="form-control" id="exampleFormControlInput1" placeholder="password" onChange={onChange} />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
           <input type="password" name='cpassword' value={cpassword} class="form-control" id="exampleFormControlInput1" placeholder="Confirm password" onChange={onChange} />
         </div>

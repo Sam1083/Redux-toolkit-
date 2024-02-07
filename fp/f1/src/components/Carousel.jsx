@@ -1,6 +1,8 @@
 
 import "./Carousel.css"
 import React, {useState} from 'react';
+
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,6 +14,7 @@ import 'swiper/css/pagination';
 
  // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
+import { Link } from "react-router-dom";
 const Carousel = () => {
     return (
       <>
@@ -20,18 +23,18 @@ const Carousel = () => {
                   <div className="col-lg-3 ">
                       <div className="custom">
                           <ul className="list-unstyled mt-1 pb-2 d-flex flex-column gap-2 ms-4">
-                              <li><a href="#" className="a"><i class="fa-solid fa-basket-shopping"></i> <span class="txt-holder">Groceries & Pets</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-heart"></i> <span class="txt-holder">Health & Beauty</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-shirt"></i> <span class="txt-holder">Men's Fashion</span></a></li>
-                              <li><a href="#" className="a"> <i class="fa-solid fa-person-dress"></i> <span class="txt-holder">Women's Fashion</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-person-breastfeeding"></i> <span class="txt-holder">Mother & Baby</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-couch"></i> <span class="txt-holder">Home & Lifestyle</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-camera"></i> <span class="txt-holder">Electronic Devices</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-plug"></i>   <span class="txt-holder">Electronic Accessories</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-tv"></i>     <span class="txt-holder">TV & Home Appliances</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-basketball"></i>  <span class="txt-holder">Sports & Outdoor</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-ring"></i>   <span class="txt-holder">Watches, Bags & Jewelry</span></a></li>
-                              <li><a href="#" className="a"><i class="fa-solid fa-car"></i>    <span class="txt-holder">Automotive & Motorbike</span></a></li>
+                              <li><Link  className="a"><i className="fa-solid fa-basket-shopping"></i> <span className="txt-holder">Groceries & Pets</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-heart"></i> <span className="txt-holder">Health & Beauty</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-shirt"></i> <span className="txt-holder">Men's Fashion</span></Link></li>
+                              <li><Link  className="a"> <i className="fa-solid fa-person-dress"></i> <span className="txt-holder">Women's Fashion</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-person-breastfeeding"></i> <span className="txt-holder">Mother & Baby</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-couch"></i> <span className="txt-holder">Home & Lifestyle</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-camera"></i> <span className="txt-holder">Electronic Devices</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-plug"></i>   <span className="txt-holder">Electronic Accessories</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-tv"></i>     <span className="txt-holder">TV & Home Appliances</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-basketball"></i>  <span className="txt-holder">Sports & Outdoor</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-ring"></i>   <span className="txt-holder">Watches, Bags & Jewelry</span></Link></li>
+                              <li><Link  className="a"><i className="fa-solid fa-car"></i>    <span className="txt-holder">Automotive & Motorbike</span></Link></li>
                           </ul>
                       </div>
                   </div>

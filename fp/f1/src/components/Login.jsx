@@ -31,13 +31,13 @@ const Login = () => {
 
   return (
     <form className=' d-flex justify-content-center flex-column align-items-center' onSubmit={onSubmit}>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" name='email' value={email} class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={onChange} />
+      <div className="mb-3">
+        <label for="exampleFormControlInput1" className="form-label">Email address</label>
+        <input type="email" name='email' value={email} className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={onChange} />
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Password</label>
-        <input type="password" name='password' value={password} class="form-control" id="exampleFormControlInput1" placeholder="password" onChange={onChange} />
+      <div className="mb-3">
+        <label for="exampleFormControlInput1" className="form-label">Password</label>
+        <input type="password" name='password' value={password} className="form-control" id="exampleFormControlInput1" placeholder="password" onChange={onChange} />
       </div>
       Dont Have a account Click to Sign Up?<Link to="/signup">Sign Up</Link>
       <button className='loginbtn'>Login</button>

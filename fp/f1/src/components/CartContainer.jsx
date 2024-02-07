@@ -52,7 +52,7 @@ if (items < 1){
 
 {items.map((item) => (
         <>
-          <div className=' container d-flex'>
+          <div key={item.id} className=' container d-flex'>
           
                 <article className='d-flex justify-content-evenly flex-column w-50 mt-3' key={item.id}>
                   <img src={item?.image} alt={item?.title} height='100px' width='100px' />
@@ -65,23 +65,26 @@ if (items < 1){
                   {/* <h4>{item?.quantity * item.price}</h4> */}
                 </article>                
                 {<Counter id={item.id} />}
-              
-            
-           
-          </div>
+              </div>
         </>
       ))}
        </div>
-       <footer>
-         <hr />
-         <div className="bucket-total d-flex justify-content-end">
-           <h4>      
-             Total : <span>${total}</span>
-           </h4>
-         </div>
-         <div className="d-flex justify-content-center ">
-         <button className="btn clear-btn border bg-warning border-dark" onClick={()=>{dispatch(clearBucket())}} style={{ height: "40px", width: "200px" }} >Clear Bucket</button></div>
-       </footer>
+        <footer>
+          <hr />
+          <div className="bucket-total d-flex justify-content-end">
+            <h4>Total: <span>{total}</span></h4>
+          </div>
+          <div className="d-flex justify-content-center">
+            <button
+              className="btn clear-btn border bg-warning border-dark"
+              onClick={() => { dispatch(clearBucket()) }}
+              style={{ height: "40px", width: "200px" }}
+            >
+              Clear Bucket
+            </button>
+          </div>
+        </footer>
+
      </section>    
     </div>
   );
